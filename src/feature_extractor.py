@@ -1,8 +1,6 @@
 import sys
-from bs4 import BeautifulSoup
+import lxml.etree as ET
 
-def helloWorld():
-    print("Hello World !")
-
-if __name__ == '__main__':
-    helloWorld();
+def extractSpellCarac(spell):
+    root = ET.HTML(page)
+    spellsList = root.xpath('//li/b/i/a[@class="pagelink"]/@href')
