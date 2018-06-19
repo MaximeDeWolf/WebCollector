@@ -1,6 +1,4 @@
-import sys
 import urllib3
-import feature_extractor
 import lxml.etree as ET
 
 class webCollector:
